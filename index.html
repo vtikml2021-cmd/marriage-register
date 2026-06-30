@@ -717,7 +717,7 @@ a:focus-visible {
 // ⚠️ REQUIRED: Paste your Apps Script Web App URL here after deploying.
 // See Code.gs (provided separately) for full setup instructions.
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwscUg_6hj-ayWSd_YvUH3W7CttkeiLrhBPMpkdCvJ6dVgG_GSYAtBzNn0sqE4WhRliHA/exec";
-
+   
 const form = document.getElementById("marriageForm");
 const statusBox = document.getElementById("formStatus");
 const submitBtn = document.getElementById("submitBtn");
@@ -786,7 +786,7 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  if (SCRIPT_URL.indexOf("PASTE_YOUR") === 0) {
+  if (SCRIPT_URL.indexOf("https://script.google.com/macros/s/AKfycbwscUg_6hj-ayWSd_YvUH3W7CttkeiLrhBPMpkdCvJ6dVgG_GSYAtBzNn0sqE4WhRliHA/exec") === 0) {
     setStatus("Backend not connected yet — add your Apps Script URL in the script (see setup instructions).", "error");
     return;
   }
